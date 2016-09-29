@@ -1,0 +1,159 @@
+ROLES AND RESPONSIBILITIES:
+---------------------------->
+	Handling Incident Tickets Like Swap, F/S, TMP Issues.
+	Working On Services Result Paralally.
+	Is There Any PAy Emergency Changes We HAve To Take CAre.
+	Initially We Are Working On All The Tasks Rotatiomnally.
+	We Are Not Dedicated To Any Perticular TAsks.
+
+
+PATCHING
+--------->
+ Its A Collection Of Specified Packages WHich Is EspeciallyUsed To Upgrade The Operating System And Establish Communication Link Between The New Application With Existing Application.
+
+Process:
+-------->
+   1) First It should Come As a Change With Proper App Rules
+   2) We Need To Conform From Application Term Database
+   3) We Need Atleast 4 Hours Down Time
+   4) Mostly we Will Do On Weekends
+   5) If Its Emergency Will Do On Time
+
+
+
+
+CHANGE MANAGER
+--------------->
+     Whenever We Do Any Changes In The Server Then Its Called As Change Manager
+       1 It Should Be Approved By Application Term
+       2 Only Because Application Need To Be Down In That Time
+       3 It Should Be Approved By database Term
+       4 It Should Be Approved By Server Owner Then we Will Proceed With Changes
+
+ROLLBACk
+--------->
+     If After PAtching The Server Application Term Keep On Complaining Regarding This Patch Is Not Compatable Over Application Then We Go For Installed Old Patch And Check WIth An Application Term Is Fine.
+
+
+
+
+
+DAILY TASKS AND DAILY ACTIVITY
+------------------------------->
+     I Will Check Mails To Know That Is There Any mail From Users Side Regarding Their Issues
+     Then I Will Start My Work With Pending Issues if Any
+     If Is There ANy Priority Issue WIll Give Preference To That
+     Paralally Workink With User RAised Tickets
+
+DAILY ISSUes
+----------->
+      F/s Full Issues
+      Memory Issues
+      Server Down Issues
+      CPU Utilization Issues
+      Package Installation
+      Changing Permissions
+      User Creations
+      Patching
+
+
+
+
+PATCHING
+-------->
+   Login To The Server And Check Uptime
+   Need To take Backup
+
+       "IFconfig
+		fdisk -l
+			/etc/grub.conf
+				nrtstat
+					/etc/fstab"
+
+   compulsory Need To unount the nfs file system
+   reboot the server whether is coming back or not
+   install thekernel
+   reboot the server once srver is back to normal statewe should check "grub.conf" Then We Find The Old And New Kernel
+   Reboot The Server Now The Server Boot With New Kernel
+   Now Update The Package With Yum
+   Finally Reboot The Server And Do Cross Check If Every Thing Is Ok Then Check with App Term And Data base term.
+                      
+
+
+                                  PATCH COMMANDS 
+				 ---------------->
+					uptime
+					fdisk -l ------> fdiskbackup
+					ifconfig -a -------> ifconfig.backup
+   					netstat -n -----------> netstat.backup
+   					cat /etc/fstab ----------> /etc/fstab backup
+
+
+
+
+
+						cat /etc/grub.conf
+						vi /etc/fstab
+						reboot
+						uptime
+						yum install kernel
+						reboot
+						cat /etc/grub.conf
+						 old kernel
+						 new kernel
+						reboot
+						 It Will COme With A New Kernel
+						yum update kernel package
+							reboot.
+
+
+
+
+                                          I.T.I.L
+					------------>
+			Information Technology InfrastructureLibrary
+
+          
+
+
+
+                                  S.L.A
+				-------->
+
+                                        Service Level Aggrement
+						Where We Should Work And COmplete The Ticket With in The SLA Time.
+
+
+
+
+
+
+
+                                We Have 4 Types Of Tickets
+
+					Critical Ticket ----> SLA-----> 2 Hours		
+					High Tickets---------> SLA----->2 Hours
+					Medium Ticket---------> SLA-----> 16 Hours
+					Low Ticket--------------> SLA-----> 32 Hours
+					Sence Result-----> SLA------> 7 DAys
+
+
+
+
+
+  Problem MAnageent
+-------------------->
+    	When We Fix The Issue Which Is Occuring Frequntly Known As Problem Management
+
+
+  Problem MAnagement
+---------------------->
+	It Generates The Auto Tickets Automatically.
+
+
+service Ticket
+-------------->
+  The Ticket Which Is Raised By A User.
+
+
+ 
