@@ -6,7 +6,7 @@ ROLES AND RESPONSIBILITIES:
 	Initially We Are Working On All The Tasks Rotatiomnally.
 	We Are Not Dedicated To Any Perticular TAsks.
 
-
+ patching 123456
 PATCHING
 --------->
  Its A Collection Of Specified Packages WHich Is EspeciallyUsed To Upgrade The Operating System And Establish Communication Link Between The New Application With Existing Application.
