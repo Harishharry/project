@@ -1,0 +1,81 @@
+ 1.What are the various ways in which build can be scheduled in Jenkins ?
+
+Ans. Builds can be triggered by source code management  commits.
+Can be triggered after completion of other builds.
+Can be scheduled to run at specified time ( crons )
+Manual Build Requests
+
+2.What you do when you see a broken build for your project in Jenkins ?
+
+Ans. I will open the console output for the build and will try to see if any file changes were missed.
+If not able to find the issue that way, Will clean and update my local workspace to replicate the problem on my local and will try to solve it.
+
+3.Explain how you can clone a Git repository via Jenkins?
+
+To clone a Git repository via Jenkins, you have to enter the e-mail and user name for your Jenkins system.  
+For that, you have to switch into your job directory and execute the “git config” command.
+
+4. Explain how you can set up Jenkins job?
+
+To create a project that is handled via jobs in Jenkins.  Select New item from the menu, once this done enter a name for the job and select free-style job. 
+Then click OK to create new job in Jenkins. 
+The next page enables you to configure your job.
+
+5.Deploy to container Plugin for Automate the deployment
+
+6. Jenkins notices that your build cluster is overloaded.  "Manage Jenkins" > "Configure System" page, and scroll down near the bottom to the "Cloud" section. There, you click the "Add a new cloud" button, and select the "Amazon EC2" option. This will display the UI for configuring the EC2 plugin.  Then enter the Access Key and Secret Access Key which act like a username/password (see IAM section). 
+Because of the way EC2 works, you also need to have an RSA private key that the cloud has the other half for, to permit sshing into the instances that are started.
+
+http://javaquicknotes.com/TopicDelegator/BuildProcess_Interview_Questions_Notes
+====================================================================================================================================
+MAVEN:
+-----
+Maven Repository
+
+ maven repository is a directory of packaged JAR file with pom.xml file. Maven searches for dependencies in the repositories. There are 3 types of maven repository:
+
+Local Repository
+Central Repository
+Remote Repository
+ 
+Maven Local Repository
+------------------------
+Maven local repository is located in your local system. It is created by the maven when you run any maven command
+Update location of Local Repository
+We can change the location of maven local repository by changing the settings.xml file. 
+It is located in MAVEN_HOME/conf/settings.xml, for example: E:\apache-maven-3.1.1\conf\settings.xml.
+
+Maven central repository is located on the web. It has been created by the apache maven community itself.
+------------------------
+Maven remote repository is located on the web. Most of libraries can be missing from the central repository such as JBoss library etc, so we need to define remote repository in pom.xml file.
+
+here are created 3 files pom.xml, App.java and AppTest.java.
+
+
+How to build the maven project or how to package maven project?
+
+The mvn package command completes the build life cycle of the maven project such as:
+
+validate
+compile
+test
+package
+integration-test
+verify
+install
+deploy
+
+
+there are 2 types of maven plugins.
+
+Build Plugins
+Reporting Plugins
+
+Build Plugins
+
+These plugins are executed at the time of build. These plugins should be declared inside the <build> element.
+
+Reporting Plugins
+
+These plugins are executed at the time of site generation. These plugins should be declared inside the <reporting> element.
+------------------------
